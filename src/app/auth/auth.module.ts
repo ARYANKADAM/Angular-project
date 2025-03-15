@@ -5,6 +5,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AuthRoutingModule } from './auth-routing.module';
 import { LoginComponent } from './component/auth/login/login.component';
 import { RegisterComponent } from './component/auth/register/register.component';
+import { provideHttpClient } from '@angular/common/http';
+import { AuthService } from './services/auth.service';
 
 @NgModule({
   declarations: [LoginComponent, RegisterComponent],
@@ -14,5 +16,6 @@ import { RegisterComponent } from './component/auth/register/register.component'
     FormsModule, // For template-driven forms
     ReactiveFormsModule, // For reactive forms
   ],
+  providers: [provideHttpClient(), AuthService],
 })
 export class AuthModule {}
