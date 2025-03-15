@@ -1,0 +1,25 @@
+<p>landing works!</p>
+<section class="landing">
+  <div class="dark-overlay">
+    <div class="landing-inner">
+      <h1 class="x-large">Developer Connector</h1>
+      <p class="lead">
+        Create a developer profile/portfolio, share posts and get help from
+        other developers
+      </p>
+      <h2>Landing Page Data with Pipes</h2>
+
+      <p>Original Title: {{ title }}</p>
+      <p>Uppercase: {{ title | uppercase }}</p>
+      <p>Lowercase: {{ title | lowercase }}</p>
+      <p>Titlecase: {{ title | titlecase }}</p>
+      <p>Today's Date: {{ today | date : "fullDate" }}</p>
+      <p>Currency Format: {{ price | currency : "INR" }}</p>
+      <p>Percentage Format: {{ percentage | percent }}</p>
+      <div class="buttons">
+        <a href="register.html" class="btn btn-primary">Sign Up</a>
+        <a href="login.html" class="btn btn-light">Login</a>
+      </div>
+    </div>
+  </div>
+</section>
